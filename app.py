@@ -110,6 +110,7 @@ def upload_file():
 
         y = html_unparsed.replace("{orange}", holder1)
         y = y.replace("{blue}", holder2)
+        y = y.replace("{raw_stats}", raw_json.replace("\n", ""))
 
         return y
     elif request.method == 'GET':
